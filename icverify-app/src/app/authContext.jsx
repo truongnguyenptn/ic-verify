@@ -1,7 +1,7 @@
 "use client";
 import { AuthClient } from "@dfinity/auth-client";
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { createActor, canisterId } from "../azle/declarations/dfx_generated";
+import { createActor, canisterId } from "../azle/src//declarations/internet_identity/index";
 
 const AuthContext = createContext();
 

@@ -1,8 +1,7 @@
 import {
   createActor as azleActor,
   canisterId as azleCanisterId,
-} from "../azle/declarations/dfx_generated";
-import { _SERVICE } from "../azle/declarations/dfx_generated/azle.did";
+} from "../azle/src//declarations/internet_identity/index";
 
 export const makeActorAzle = async (canisterId: string, createActor: any) => {
   return await createActor(canisterId, {
