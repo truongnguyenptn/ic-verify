@@ -34,7 +34,7 @@ sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
 ### Installing
 
 ```Clone this Git repository on your local device:
-[code blocks for commands](git clone https://github.com/owenthe10x/ICP-Codefest-5Byte/)
+[code blocks for commands](git clone https://github.com/truongnguyenptn/ic-verify)
  ```
 ### Executing program
 
