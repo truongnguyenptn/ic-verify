@@ -1,5 +1,5 @@
-"use client";
-import { useAuth } from "@/app/authContext";
+'use client';
+import { useAuth } from '@/app/authContext';
 const Footer = () => {
   const { isAuthenticated } = useAuth();
   return isAuthenticated ? (
@@ -7,7 +7,7 @@ const Footer = () => {
   ) : (
     <footer id="footer" className="bg-color5 text-white py-20 px-40 mt-auto">
       <section className="grid grid-cols-3 gap-40 items-end">
-        <h2 className="font-bold mb-10 text-4xl">DigiSignID</h2>
+        <h2 className="font-bold mb-10 text-4xl">ICVerify</h2>
         <h3 className="font-bold mb-10">Our Contact</h3>
         <h3 className="font-bold mb-10">Social Media</h3>
       </section>
@@ -18,7 +18,7 @@ const Footer = () => {
           <h3 className="text-xl">Pricing & Subscription</h3>
         </section>
         <section>
-          <h3>support@digisignid.com</h3>
+          <h3>support@ICVerify.com</h3>
           <h3>+62 8 2341 1245</h3>
         </section>
         <section>

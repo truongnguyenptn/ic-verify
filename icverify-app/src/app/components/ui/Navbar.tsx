@@ -1,21 +1,21 @@
-"use client";
-import Scroll from "./Scroll";
-import { useState, useCallback, useEffect } from "react";
-import { useAuth } from "../../authContext";
-import { makeAzleActor } from "../../../service/actor";
-import { _SERVICE as AZLE } from "../../../azle/declarations/dfx_generated/azle.did";
+'use client';
+import Scroll from './Scroll';
+import { useState, useCallback, useEffect } from 'react';
+import { useAuth } from '../../authContext';
+import { makeAzleActor } from '../../../service/actor';
+import { _SERVICE as AZLE } from '../../../azle/declarations/dfx_generated/azle.did';
 
-import { Button } from "@mui/material";
-import ICLogo from "../../../../public/assets/icons/ic-logo.png";
-import Image from "next/image";
-import DigiSignLogo from "../../../../public/assets/icons/DigiSignID.png";
-import { Link } from "react-scroll";
-import { useRouter } from "next/navigation";
-import Roll from "../../../../public/assets/icons/Roll.png";
-import Home from "../../../../public/assets/icons/Home.png";
-import Signature from "../../../../public/assets/icons/Signature.png";
-import Logout from "../../../../public/assets/icons/Out.png";
-import Links from "next/link";
+import { Button } from '@mui/material';
+import ICLogo from '../../../../public/assets/icons/ic-logo.png';
+import Image from 'next/image';
+import DigiSignLogo from '../../../../public/assets/icons/ICVerify.png';
+import { Link } from 'react-scroll';
+import { useRouter } from 'next/navigation';
+import Roll from '../../../../public/assets/icons/Roll.png';
+import Home from '../../../../public/assets/icons/Home.png';
+import Signature from '../../../../public/assets/icons/Signature.png';
+import Logout from '../../../../public/assets/icons/Out.png';
+import Links from 'next/link';
 
 const Navbar = () => {
   const [navbarBG, setNavbarBG] = useState(false);
@@ -35,14 +35,14 @@ const Navbar = () => {
       logout();
     } else {
       login();
-      router.push("/revalidate");
+      router.push('/revalidate');
     }
   };
 
   return isAuthenticated ? (
     <div className="text-white bg-color5 fixed left-0 h-full z-50 w-72">
       <div className="grid grid-cols-1 place-items-center">
-        <h2 className="font-bold mx-auto py-4 text-2xl">DigiSignID</h2>
+        <h2 className="font-bold mx-auto py-4 text-2xl">ICVerify</h2>
         <ul className="grid grid-cols-1 place-items-center gap-2 mt-20">
           <li>
             <Links
@@ -80,7 +80,7 @@ const Navbar = () => {
           // Your custom logout logic here
           e.preventDefault(); // Prevent the default navigation behavior
           logout();
-          router.push("/");
+          router.push('/');
           // Add your logout logic here
         }}
       >
@@ -92,13 +92,13 @@ const Navbar = () => {
     <ul
       className={
         navbarBG
-          ? "fixed w-full top-0 z-50 flex justify-evenly items-center text-white  bg-gradient-to-r from-color5 via-color2  to-color3 bg-opacity-70"
-          : "fixed w-full top-0 z-50 flex justify-evenly items-center text-white "
+          ? 'fixed w-full top-0 z-50 flex justify-evenly items-center text-white  bg-gradient-to-r from-color5 via-color2  to-color3 bg-opacity-70'
+          : 'fixed w-full top-0 z-50 flex justify-evenly items-center text-white '
       }
     >
       <Scroll colored={setColoredNavbar} transparent={setTransparentNavbar} />
       <li>
-        <Link to={"/"} className="  text-xl px-4 py-2 rounded-lg">
+        <Link to={'/'} className="  text-xl px-4 py-2 rounded-lg">
           <Image src={DigiSignLogo} alt="" className="w-32" />
         </Link>
       </li>

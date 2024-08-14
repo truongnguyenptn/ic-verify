@@ -49,8 +49,8 @@ Note: If you run it in MacOS, you may be asked to allow connections from dfx loc
 2. Enter the commands to install dependencies, deploy canister and run Next.js dev server:
    
 ```
-npm install
-npm run dev
+yarn install
+yarn run dev
  ```
 
 3. The website will usually run on:
@@ -60,7 +60,7 @@ npm run dev
 ```
 cd src
 cd azle
-npm install
+yarn
 dfx start --background --clean
 dfx deps pull
 dfx deps deploy
